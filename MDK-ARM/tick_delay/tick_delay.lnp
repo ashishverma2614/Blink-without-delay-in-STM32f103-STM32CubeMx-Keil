@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"tick_delay\startup_stm32f103xb.o"
+"tick_delay\main.o"
+"tick_delay\stm32f1xx_it.o"
+"tick_delay\stm32f1xx_hal_msp.o"
+"tick_delay\stm32f1xx_hal_gpio_ex.o"
+"tick_delay\stm32f1xx_hal_tim.o"
+"tick_delay\stm32f1xx_hal_tim_ex.o"
+"tick_delay\stm32f1xx_hal.o"
+"tick_delay\stm32f1xx_hal_rcc.o"
+"tick_delay\stm32f1xx_hal_rcc_ex.o"
+"tick_delay\stm32f1xx_hal_gpio.o"
+"tick_delay\stm32f1xx_hal_dma.o"
+"tick_delay\stm32f1xx_hal_cortex.o"
+"tick_delay\stm32f1xx_hal_pwr.o"
+"tick_delay\stm32f1xx_hal_flash.o"
+"tick_delay\stm32f1xx_hal_flash_ex.o"
+"tick_delay\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "tick_delay\tick_delay.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tick_delay.map" -o tick_delay\tick_delay.axf
